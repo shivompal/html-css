@@ -74,7 +74,7 @@ a {
 .link-arrow::after {
   content: "-->";
   margin-left: 0.3rem;
-  transition: margin 0.5;
+  transition: margin 0.3s;
 }
 
 .link-arrow:hover::after {
@@ -84,5 +84,38 @@ a {
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
+  }
+}
+
+/* Badges */
+.badge {
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  font-weight: 400;
+  white-space: nowrap;
+  font-size: 2rem;
+}
+
+.badge--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
   }
 }
